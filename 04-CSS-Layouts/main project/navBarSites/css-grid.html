@@ -40,8 +40,26 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20PX;
+        display: none;
       }
-
+      /* .el--1{
+        grid-row: 1/4;
+      }
+      .el--6{
+        grid-column: 3;
+      }
+      .el--8{
+        grid-column: 2/3;
+      }
+      .el--4{
+        grid-column: 4/5;
+        grid-row: 1/2;
+      } */
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
@@ -49,10 +67,17 @@
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>

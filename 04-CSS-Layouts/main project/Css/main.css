@@ -75,7 +75,7 @@ h4 {
 }*/
 
 .post-header {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 p {
@@ -140,7 +140,7 @@ li:last-child {
 .main-header {
     background-color: #f7f7f7;
     padding: 40px 20px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 nav a:link {
@@ -282,7 +282,7 @@ footer {
     display: flex;
     gap: 75px;
 }
-
+/*
 article {
     flex: 1;
     margin-bottom: 20px;
@@ -291,4 +291,29 @@ article {
 aside {
     align-self: flex-start;
     flex: 0 0 300px;
+}*/
+
+
+/* CSS Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 30px;
+}
+
+.main-header {
+    grid-column: 1/-1; 
+}
+
+article {
+
+}
+
+aside {
+    align-self: start;
+}
+
+footer {
+    grid-column: 1/-1;
 }
